@@ -1,0 +1,8 @@
+<button (click)="changeItem()">Change Name</button>
+<button (click)="mutateItem()">Mutate Name</button>
+
+<ul>
+  <li *ngFor="let item of items; trackBy: trackById">
+    <app-child [item]="item"></app-child>
+  </li>
+</ul>
